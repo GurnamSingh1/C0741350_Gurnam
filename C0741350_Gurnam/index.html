@@ -3,10 +3,27 @@
 <head>
     <meta charset="utf-8" />
     <title>C0741350_Gurnam</title>
-    <link href="css/default.css" rel="stylesheet" />
+    <script type="text/javascript">
+        function trigger()
+        {
+            document.getElementById("hover").addEventListener("mouseover", popup);
+
+            function popup() {
+                alert("Welcome to my Webpage!!!");
+            }
+        }
+        </script>
+    <style>
+        p{
+            font-size:50px;
+            position:fixed;
+            left:550px;
+            top:300px;
+
+        }
+        </style>
 </head>
-<body>
-    <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+<body onload="trigger();">
+    <p id="hover"><img src="6d03275ab09944e3942a8d2f1f8f24ab13b06b2f.jpg"></p>
 </body>
 </html>
